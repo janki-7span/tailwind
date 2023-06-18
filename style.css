@@ -5,3 +5,15 @@
 body{
     font-family: 'Genos', sans-serif;
 }
+
+ .Marquee-content{
+    animation :marquee 40s linear infinite running;
+ }
+ .Marquee-tag{
+    transition :all .2s ease;
+ }
+ 
+@keyframes marquee{
+  0% {transform: translateX(0);}
+  100% {transform: translate(-50%);}
+  }

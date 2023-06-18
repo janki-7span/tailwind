@@ -32,6 +32,4 @@ document.addEventListener('alpine:init', () => {
     })
 // faq over
 
-// marquee tag
 
-// marquee tag
