@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <script
       defer
       src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
@@ -80,7 +81,7 @@
         <!-- hero section start -->
         <section class="py-3 lg:py-16">
           <div class="container px-4 mx-auto">
-            <div class="md:flex items-center">
+            <div class="md:flex justify-between items-center">
               <div class="uppercase md:w-8/12">
                 <h1
                   class="text-gray font-semibold text-4xl md:leading-10 md:text-5xl lg:text-headingbig lg:leading-height"
@@ -89,10 +90,14 @@
                 </h1>
                 <div class="flex py-4 gap-3 lg:my-8">
                   <div class="play_store">
-                    <img src="./images/playstore.png" alt="playstore" />
+                    <a href="#"
+                      ><img src="./images/playstore.png" alt="playstore"
+                    /></a>
                   </div>
                   <div class="app_store">
-                    <img src="./images/appstore.jpg" alt="appstore" />
+                    <a href="#"
+                      ><img src="./images/appstore.jpg" alt="appstore"
+                    /></a>
                   </div>
                 </div>
 
@@ -114,11 +119,13 @@
 
               <div class="md:w-5/12 relative">
                 <img src="./images/hero.png" alt="hero_image" />
-                <div
-                  class="p-4 w-20 h-20 border-2 border-gray border-dashed rounded-full text-center text-base font-bold absolute bottom-28 -left-2 lg:bottom-32 lg:w-32 lg:h-32 lg:p-8 xl:bottom-40 xl:-left-1 xl:p-8 xl:w-32 xl:h-32 lg:text-2xl"
-                >
-                  <span>view more</span>
-                </div>
+                <a href="#">
+                  <div
+                    class="p-4 w-20 h-20 border-2 border-gray border-dashed rounded-full text-center text-base font-bold absolute bottom-28 -left-2 lg:bottom-32 lg:w-32 lg:h-32 lg:p-8 xl:bottom-40 xl:-left-1 xl:p-8 xl:w-32 xl:h-32 lg:text-2xl"
+                  >
+                    <span>view more</span>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -137,13 +144,15 @@
                 </h2>
               </div>
               <div class="md:flex items-center">
-                <div class="py-6 md:w-6/12 relative">
+                <div class="py-6 md:w-2/5 relative">
                   <img src="./images/collection.png" alt="collection-main" />
-                  <div
-                    class="p-4 w-20 h-20 border-2 border-gray border-dashed rounded-full text-center text-base font-bold absolute bottom-28 right-6 lg:bottom-32 lg:w-32 lg:h-32 lg:p-8 xl:bottom-40 xl:right-28 xl:p-8 xl:w-32 xl:h-32 lg:text-2xl"
-                  >
-                    <span>view more</span>
-                  </div>
+                  <a href="#">
+                    <div
+                      class="p-4 w-20 h-20 border-2 border-gray border-dashed rounded-full text-center text-base font-bold absolute bottom-28 right-6 lg:bottom-32 lg:w-32 lg:h-32 lg:p-8 xl:bottom-40 xl:right-28 xl:p-8 xl:w-32 xl:h-32 lg:text-2xl"
+                    >
+                      <span>view more</span>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="md:w-6/12">
@@ -168,7 +177,7 @@
                           >
                             <h2
                               @click="handleClick()"
-                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-2xl"
+                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-lg"
                             >
                               <span>professional collection of nature </span>
                               <img
@@ -208,7 +217,7 @@
                           >
                             <h2
                               @click="handleClick()"
-                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-2xl"
+                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-lg"
                             >
                               <span>national wear of other countries </span>
                               <img
@@ -248,7 +257,7 @@
                           >
                             <h2
                               @click="handleClick()"
-                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-2xl"
+                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-lg"
                             >
                               <span>modern art of young artists</span>
                               <img
@@ -286,126 +295,6 @@
                       </div>
                     </div>
                   </div>
-
-                  <!-- <div class="flex justify-start">
-                    <div class="relative md:mb-7">
-                      <input
-                        type="checkbox"
-                        id="input"
-                        class="absolute peer opacity-0"
-                      />
-
-                      <label
-                        for="input"
-                        class="font-semibold text-sm text-gray-700 uppercase md:text-lg lg:text-2xl"
-                      >
-                        professional collection of nature</label
-                      >
-
-                      <div
-                        class="absolute top-0 -right-1 rotate-0 peer-checked:rotate-180 duration-200 md:right-1 md:top-1 xl:top-3"
-                      >
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                      </div>
-
-                      <div
-                        class="max-h-0 border-b overflow-hidden peer-checked:max-h-full"
-                      >
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          It has survived not only five centuries, but also the
-                          leap into electronic typesetting, remaining
-                          essentially unchanged.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="flex justify-start">
-                    <div class="relative md:mb-7">
-                      <input
-                        type="checkbox"
-                        id="input"
-                        class="absolute peer opacity-0"
-                      />
-
-                      <label
-                        for="input"
-                        class="font-semibold text-sm text-gray-700 uppercase md:text-lg lg:text-2xl"
-                      >
-                        national wear of other countries</label
-                      >
-
-                      <div
-                        class="absolute top-0 -right-1 rotate-0 peer-checked:rotate-180 duration-200 md:right-1 md:top-1 xl:top-3"
-                      >
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                      </div>
-
-                      <div
-                        class="max-h-0 border-b overflow-hidden peer-checked:max-h-full"
-                      >
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          It has survived not only five centuries, but also the
-                          leap into electronic typesetting, remaining
-                          essentially unchanged.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="flex justify-start">
-                    <div class="relative">
-                      <input
-                        type="checkbox"
-                        id="input"
-                        class="absolute peer opacity-0"
-                      />
-
-                      <label
-                        for="input"
-                        class="font-semibold text-sm text-gray-700 uppercase md:text-lg lg:text-2xl"
-                      >
-                        modern art of young artists</label
-                      >
-
-                      <div
-                        class="absolute top-0 -right-1 rotate-0 peer-checked:rotate-180 duration-200 md:right-1 md:top-1 xl:top-3"
-                      >
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                      </div>
-
-                      <div
-                        class="max-h-0 border-b overflow-hidden peer-checked:max-h-full"
-                      >
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          It has survived not only five centuries, but also the
-                          leap into electronic typesetting, remaining
-                          essentially unchanged.
-                        </p>
-                      </div>
-                    </div>
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -426,17 +315,17 @@
               </div>
               <div class="lg:w-9/12 xl:pt-16">
                 <h3
-                  class="font-medium py-5 text-2xl md:w-8/12 md:my-0 md:mx-auto md:text-center lg:text-5xl lg:leading-10 lg:py-8"
+                  class="font-medium py-5 text-2xl sm:pt-10 sm:pb-1 md:my-0 md:mx-auto lg:text-5xl lg:leading-10 lg:py-8"
                 >
                   We have created a unique platform for all kinds
                 </h3>
                 <h3
-                  class="font-medium py-5 text-2xl md:w-8/12 lg:text-5xl lg:leading-10 lg:py-8"
+                  class="font-medium py-5 text-2xl sm:pt-1 md:w-8/12 lg:text-5xl lg:leading-10 lg:py-8"
                 >
                   of art. Each of you can become known to all world.
                 </h3>
                 <p
-                  class="text-base font-medium md:w-5/12 md:text-lg lg:text-xl lg:w-5/12 lg:ml-auto"
+                  class="text-base font-medium md:text-lg lg:text-xl lg:w-5/12 lg:ml-auto"
                 >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -444,12 +333,12 @@
               </div>
 
               <div
-                class="md:flex md:flex-wrap md:w-auto md:gap-1 xl:mt-28 xl:relative"
+                class="md:flex md:flex-wrap md:w-auto md:gap-x-5 xl:mt-28 xl:relative"
               >
                 <div
-                  class="bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-1/3 xl:rotate-12 xl:absolute xl:-top-28"
+                  class="w-11/12 m-auto bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-[48%] xl:rotate-12 xl:absolute xl:-top-28 xl:w-[32.33%]"
                 >
-                  <div class="flex items-center justify-around">
+                  <div class="flex items-center justify-center">
                     <div class="card">
                       <img
                         class="rounded-xl w-36 h-36"
@@ -494,9 +383,9 @@
                 </div>
 
                 <div
-                  class="bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-1/3 xl:absolute xl:right-1/3"
+                  class="w-11/12 m-auto bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-[48%] xl:absolute xl:right-[34%] xl:w-[32.33%]"
                 >
-                  <div class="flex items-center justify-around">
+                  <div class="flex items-center justify-center">
                     <div class="card">
                       <img
                         class="rounded-xl w-36 h-36"
@@ -537,9 +426,9 @@
                 </div>
 
                 <div
-                  class="bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-1/3 xl:-rotate-12 xl:absolute xl:right-px xl:-top-28"
+                  class="w-11/12 m-auto bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-[48%] xl:-rotate-12 xl:absolute xl:right-px xl:-top-28 xl:w-[32.33%]"
                 >
-                  <div class="flex items-center justify-around">
+                  <div class="flex items-center justify-center">
                     <div class="card">
                       <img
                         class="rounded-xl w-36 h-36"
@@ -605,21 +494,21 @@
                   </div>
                   <div class="md:mr-5 relative">
                     <div
-                      class="w-28 border border-solid border-gray rounded-full p-4 text-center bg-offwhite absolute md:-top-20 md:w-40 md:p-8 xl:-top-8 xl:w-40 xl:p-9 xl:text-5xl"
+                      class="w-28 border border-solid border-gray rounded-full p-4 text-center bg-offwhite absolute md:-top-20 md:w-40 md:p-10 xl:-top-8 xl:w-[148px] xl:p-7 xl:text-5xl"
                     >
                       <p class="text-3xl font-medium">80</p>
                       <p class="text-lg leading-5 xl:text-lg">NFT platforms</p>
                     </div>
 
                     <div
-                      class="w-36 border border-solid border-gray rounded-full p-6 text-center bg-offwhite ml-20 absolute top-14 left-7 md:right-12 md:left-16 md:p-12 md:w-48 xl:p-20 xl:w-64 xl:left-32 xl:text-6xl"
+                      class="w-36 border border-solid border-gray rounded-full p-[26px] text-center bg-offwhite ml-20 absolute top-14 left-7 md:right-12 md:left-16 md:p-12 md:w-[188px] xl:p-[91px] xl:w-[275px] xl:left-32 xl:text-6xl"
                     >
                       <p class="text-5xl font-medium">600</p>
                       <p class="text-2xl xl:text-2xl">Top Artist</p>
                     </div>
 
                     <div
-                      class="w-28 border border-solid border-gray rounded-full p-4 text-center bg-gray text-offwhite my-1 absolute top-32 md:w-40 md:p-8 md:top-52 xl:w-48 xl:p-12 xl:text-5xl"
+                      class="w-28 border border-solid border-gray rounded-full p-4 text-center bg-gray text-offwhite my-1 absolute top-32 md:w-40 md:p-11 md:top-52 xl:w-48 xl:p-12 xl:text-5xl"
                     >
                       <p class="text-3xl font-medium">80</p>
                       <p class="text-lg leading-5 xl:text-lg">NFT platforms</p>
@@ -674,7 +563,7 @@
                       </h4>
                     </div>
                   </div>
-                  <div class="who_button">
+                  <a href="#">
                     <button
                       class="flex items-center gap-3 border border-solid border-gray-600 px-3 py-1 rounded-full text-gray-600 my-8 uppercase bg-orange hover:bg-transparent md:text-xl md:font-medium md:px-5 md:py-2"
                     >
@@ -687,7 +576,7 @@
                         />
                       </div>
                     </button>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -702,7 +591,7 @@
           <div class="absolute -z-10 w-[106%] py-12">
             <div class="Marquee overflow-hidden border-t border-b -rotate-12">
               <div
-                class="Marquee-content font-semibold text-5xl flex w-[1125%] lg:w-[532%] md:text-7xl xl:text-headingbottom xl:w-[700%]"
+                class="Marquee-content font-semibold text-5xl flex w-[1012%] lg:w-[462%] md:text-7xl md:w-[618%] xl:text-headingbottom xl:w-[638%]"
               >
                 <div class="Marquee-tag w-full">not only for professionals</div>
                 <div class="Marquee-tag w-full">not only for professionals</div>
