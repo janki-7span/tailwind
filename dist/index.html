@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon-0be37918.png" type="image/x-icon" />
     <script
       defer
       src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
@@ -28,7 +29,8 @@
       rel="stylesheet"
     />
     <title>NFT</title>
-    <link rel="stylesheet" href="/assets/index-8352a6fa.css">
+    <script type="module" crossorigin src="/assets/index-9f76c8bc.js"></script>
+    <link rel="stylesheet" href="/assets/index-b87a377e.css">
   </head>
   <body>
     <div class="bg-radialgradient">
@@ -81,7 +83,7 @@
         <!-- hero section start -->
         <section class="py-3 lg:py-16">
           <div class="container px-4 mx-auto">
-            <div class="md:flex items-center">
+            <div class="md:flex justify-between items-center">
               <div class="uppercase md:w-8/12">
                 <h1
                   class="text-gray font-semibold text-4xl md:leading-10 md:text-5xl lg:text-headingbig lg:leading-height"
@@ -90,10 +92,14 @@
                 </h1>
                 <div class="flex py-4 gap-3 lg:my-8">
                   <div class="play_store">
-                    <img src="data:image/png;base64,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" alt="playstore" />
+                    <a href="#"
+                      ><img src="data:image/png;base64,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" alt="playstore"
+                    /></a>
                   </div>
                   <div class="app_store">
-                    <img src="/assets/appstore-f7952ea3.jpg" alt="appstore" />
+                    <a href="#"
+                      ><img src="/assets/appstore-f7952ea3.jpg" alt="appstore"
+                    /></a>
                   </div>
                 </div>
 
@@ -115,11 +121,13 @@
 
               <div class="md:w-5/12 relative">
                 <img src="/assets/hero-682b9317.png" alt="hero_image" />
-                <div
-                  class="p-4 w-20 h-20 border-2 border-gray border-dashed rounded-full text-center text-base font-bold absolute bottom-28 -left-2 lg:bottom-32 lg:w-32 lg:h-32 lg:p-8 xl:bottom-40 xl:-left-1 xl:p-8 xl:w-32 xl:h-32 lg:text-2xl"
-                >
-                  <span>view more</span>
-                </div>
+                <a href="#">
+                  <div
+                    class="p-4 w-20 h-20 border-2 border-gray border-dashed rounded-full text-center text-base font-bold absolute bottom-28 -left-2 lg:bottom-32 lg:w-32 lg:h-32 lg:p-8 xl:bottom-40 xl:-left-1 xl:p-8 xl:w-32 xl:h-32 lg:text-2xl"
+                  >
+                    <span>view more</span>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -137,14 +145,16 @@
                   collection
                 </h2>
               </div>
-              <div class="md:flex items-center">
-                <div class="py-6 md:w-6/12 relative">
+              <div class="md:flex items-center justify-around">
+                <div class="py-6 md:w-2/5 relative">
                   <img src="/assets/collection-1a3ab1b0.png" alt="collection-main" />
-                  <div
-                    class="p-4 w-20 h-20 border-2 border-gray border-dashed rounded-full text-center text-base font-bold absolute bottom-28 right-6 lg:bottom-32 lg:w-32 lg:h-32 lg:p-8 xl:bottom-40 xl:right-28 xl:p-8 xl:w-32 xl:h-32 lg:text-2xl"
-                  >
-                    <span>view more</span>
-                  </div>
+                  <a href="#">
+                    <div
+                      class="p-4 w-20 h-20 border-2 border-gray border-dashed rounded-full text-center text-base font-bold absolute bottom-28 right-6 lg:bottom-32 lg:w-32 lg:h-32 lg:p-8 xl:bottom-40 xl:right-8 xl:p-8 xl:w-32 xl:h-32 lg:text-2xl"
+                    >
+                      <span>view more</span>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="md:w-6/12">
@@ -169,7 +179,7 @@
                           >
                             <h2
                               @click="handleClick()"
-                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-2xl"
+                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-lg"
                             >
                               <span>professional collection of nature </span>
                               <img
@@ -209,7 +219,7 @@
                           >
                             <h2
                               @click="handleClick()"
-                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-2xl"
+                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-lg"
                             >
                               <span>national wear of other countries </span>
                               <img
@@ -249,7 +259,7 @@
                           >
                             <h2
                               @click="handleClick()"
-                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-2xl"
+                              class="flex flex-row justify-between items-center font-semibold cursor-pointer uppercase md:text-lg"
                             >
                               <span>modern art of young artists</span>
                               <img
@@ -287,126 +297,6 @@
                       </div>
                     </div>
                   </div>
-
-                  <!-- <div class="flex justify-start">
-                    <div class="relative md:mb-7">
-                      <input
-                        type="checkbox"
-                        id="input"
-                        class="absolute peer opacity-0"
-                      />
-
-                      <label
-                        for="input"
-                        class="font-semibold text-sm text-gray-700 uppercase md:text-lg lg:text-2xl"
-                      >
-                        professional collection of nature</label
-                      >
-
-                      <div
-                        class="absolute top-0 -right-1 rotate-0 peer-checked:rotate-180 duration-200 md:right-1 md:top-1 xl:top-3"
-                      >
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                      </div>
-
-                      <div
-                        class="max-h-0 border-b overflow-hidden peer-checked:max-h-full"
-                      >
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          It has survived not only five centuries, but also the
-                          leap into electronic typesetting, remaining
-                          essentially unchanged.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="flex justify-start">
-                    <div class="relative md:mb-7">
-                      <input
-                        type="checkbox"
-                        id="input"
-                        class="absolute peer opacity-0"
-                      />
-
-                      <label
-                        for="input"
-                        class="font-semibold text-sm text-gray-700 uppercase md:text-lg lg:text-2xl"
-                      >
-                        national wear of other countries</label
-                      >
-
-                      <div
-                        class="absolute top-0 -right-1 rotate-0 peer-checked:rotate-180 duration-200 md:right-1 md:top-1 xl:top-3"
-                      >
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                      </div>
-
-                      <div
-                        class="max-h-0 border-b overflow-hidden peer-checked:max-h-full"
-                      >
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          It has survived not only five centuries, but also the
-                          leap into electronic typesetting, remaining
-                          essentially unchanged.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="flex justify-start">
-                    <div class="relative">
-                      <input
-                        type="checkbox"
-                        id="input"
-                        class="absolute peer opacity-0"
-                      />
-
-                      <label
-                        for="input"
-                        class="font-semibold text-sm text-gray-700 uppercase md:text-lg lg:text-2xl"
-                      >
-                        modern art of young artists</label
-                      >
-
-                      <div
-                        class="absolute top-0 -right-1 rotate-0 peer-checked:rotate-180 duration-200 md:right-1 md:top-1 xl:top-3"
-                      >
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                      </div>
-
-                      <div
-                        class="max-h-0 border-b overflow-hidden peer-checked:max-h-full"
-                      >
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                        <p class="text-base font-medium md:text-lg lg:text-xl">
-                          It has survived not only five centuries, but also the
-                          leap into electronic typesetting, remaining
-                          essentially unchanged.
-                        </p>
-                      </div>
-                    </div>
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -427,17 +317,17 @@
               </div>
               <div class="lg:w-9/12 xl:pt-16">
                 <h3
-                  class="font-medium py-5 text-2xl md:w-8/12 md:my-0 md:mx-auto md:text-center lg:text-5xl lg:leading-10 lg:py-8"
+                  class="font-medium pt-5 text-2xl sm:pt-10 sm:pb-1 md:my-0 md:mx-auto lg:text-5xl lg:leading-10 lg:py-8 xl:w-[55%]"
                 >
                   We have created a unique platform for all kinds
                 </h3>
                 <h3
-                  class="font-medium py-5 text-2xl md:w-8/12 lg:text-5xl lg:leading-10 lg:py-8"
+                  class="font-medium pb-5 text-2xl sm:pt-1 md:w-8/12 lg:text-5xl lg:leading-10 lg:py-8 xl:w-4/6"
                 >
                   of art. Each of you can become known to all world.
                 </h3>
                 <p
-                  class="text-base font-medium md:w-5/12 md:text-lg lg:text-xl lg:w-5/12 lg:ml-auto"
+                  class="text-base font-medium md:text-lg lg:text-xl lg:w-5/12 lg:ml-auto xl:w-2/6"
                 >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -445,12 +335,12 @@
               </div>
 
               <div
-                class="md:flex md:flex-wrap md:w-auto md:gap-1 xl:mt-28 xl:relative"
+                class="md:flex md:flex-wrap md:w-auto md:gap-x-5 xl:mt-28 xl:relative"
               >
                 <div
-                  class="bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-1/3 xl:rotate-12 xl:absolute xl:-top-28"
+                  class="w-11/12 m-auto bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-[48%] xl:rotate-12 xl:absolute xl:-top-28 xl:w-[32.33%]"
                 >
-                  <div class="flex items-center justify-around">
+                  <div class="flex items-center justify-center">
                     <div class="card">
                       <img
                         class="rounded-xl w-36 h-36"
@@ -495,9 +385,9 @@
                 </div>
 
                 <div
-                  class="bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-1/3 xl:absolute xl:right-1/3"
+                  class="w-11/12 m-auto bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-[48%] xl:absolute xl:right-[34%] xl:w-[32.33%]"
                 >
-                  <div class="flex items-center justify-around">
+                  <div class="flex items-center justify-center">
                     <div class="card">
                       <img
                         class="rounded-xl w-36 h-36"
@@ -538,9 +428,9 @@
                 </div>
 
                 <div
-                  class="bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-1/3 xl:-rotate-12 xl:absolute xl:right-px xl:-top-28"
+                  class="w-11/12 m-auto bg-gray rounded-xl border-2 border-dashed border-orange p-4 my-4 md:w-[48%] xl:-rotate-12 xl:absolute xl:right-px xl:-top-28 xl:w-[32.33%]"
                 >
-                  <div class="flex items-center justify-around">
+                  <div class="flex items-center justify-center">
                     <div class="card">
                       <img
                         class="rounded-xl w-36 h-36"
@@ -606,21 +496,21 @@
                   </div>
                   <div class="md:mr-5 relative">
                     <div
-                      class="w-28 border border-solid border-gray rounded-full p-4 text-center bg-offwhite absolute md:-top-20 md:w-40 md:p-8 xl:w-48 xl:p-12 xl:text-5xl"
+                      class="w-28 border border-solid border-gray rounded-full p-4 text-center bg-offwhite absolute md:-top-20 md:w-40 md:p-10 xl:-top-8 xl:w-[148px] xl:p-7 xl:text-5xl"
                     >
                       <p class="text-3xl font-medium">80</p>
                       <p class="text-lg leading-5 xl:text-lg">NFT platforms</p>
                     </div>
 
                     <div
-                      class="w-36 border border-solid border-gray rounded-full p-6 text-center bg-offwhite ml-20 absolute top-14 left-7 md:right-12 md:left-16 md:p-12 md:w-48 xl:p-20 xl:w-64 xl:left-32 xl:text-6xl"
+                      class="w-36 border border-solid border-gray rounded-full p-[26px] text-center bg-offwhite ml-20 absolute top-14 left-7 md:right-12 md:left-16 md:p-12 md:w-[188px] xl:p-[91px] xl:w-[275px] xl:left-32 xl:text-6xl"
                     >
                       <p class="text-5xl font-medium">600</p>
                       <p class="text-2xl xl:text-2xl">Top Artist</p>
                     </div>
 
                     <div
-                      class="w-28 border border-solid border-gray rounded-full p-4 text-center bg-gray text-offwhite my-1 absolute top-32 md:w-40 md:p-8 md:top-52 xl:w-48 xl:p-12 xl:text-5xl"
+                      class="w-28 border border-solid border-gray rounded-full p-4 text-center bg-gray text-offwhite my-1 absolute top-32 md:w-40 md:p-11 md:top-52 xl:w-48 xl:p-12 xl:text-5xl"
                     >
                       <p class="text-3xl font-medium">80</p>
                       <p class="text-lg leading-5 xl:text-lg">NFT platforms</p>
@@ -643,7 +533,7 @@
                   </p>
                   <div class="who_innerwrap">
                     <div
-                      class="flex items-center justify-between w-full py-8 border-b border-b-black"
+                      class="flex items-center justify-between w-full pt-8 border-b border-b-black"
                     >
                       <h4
                         class="font-semibold text-lg text-gray-700 uppercase md:text-lg lg:text-2xl"
@@ -654,7 +544,7 @@
                   </div>
                   <div class="who_innerwrap">
                     <div
-                      class="flex items-center justify-between w-full py-8 border-b border-b-black"
+                      class="flex items-center justify-between w-full pt-8 border-b border-b-black"
                     >
                       <h4
                         class="font-semibold text-lg text-gray-700 uppercase lg:text-2xl"
@@ -665,7 +555,7 @@
                   </div>
                   <div class="who_innerwrap">
                     <div
-                      class="flex items-center justify-between w-full py-8 border-b border-b-black"
+                      class="flex items-center justify-between w-full pt-8 border-b border-b-black"
                     >
                       <h4
                         class="font-semibold text-lg text-gray-700 uppercase lg:text-2xl"
@@ -675,7 +565,7 @@
                       </h4>
                     </div>
                   </div>
-                  <div class="who_button">
+                  <a href="#">
                     <button
                       class="flex items-center gap-3 border border-solid border-gray-600 px-3 py-1 rounded-full text-gray-600 my-8 uppercase bg-orange hover:bg-transparent md:text-xl md:font-medium md:px-5 md:py-2"
                     >
@@ -688,7 +578,7 @@
                         />
                       </div>
                     </button>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -698,21 +588,25 @@
 
         <!-- section only start -->
         <section
-          class="py-16 bg-whobg flex justify-center items-center overflow-hidden relative"
+          class="pb-7 bg-whobg flex justify-center items-center overflow-hidden relative xl:py-24"
         >
-          <div
-            class="absolute -z-10 w-[106%] py-12 animate-marquee2 whitespace-nowrap"
-          >
-            <marquee
-              direction="left"
-              class="font-semibold text-5xl h-14 -rotate-12 border-t border-b md:text-7xl md:h-20 xl:text-headingbottom"
-            >
-              not only for professionals
-            </marquee>
+          <div class="absolute -z-10 w-[106%] py-12">
+            <div class="Marquee overflow-hidden border-t border-b -rotate-12">
+              <div
+                class="Marquee-content font-semibold text-5xl flex w-[1012%] lg:w-[462%] md:text-7xl md:w-[618%] xl:text-headingbottom xl:w-[638%]"
+              >
+                <div class="Marquee-tag w-full">not only for professionals</div>
+                <div class="Marquee-tag w-full">not only for professionals</div>
+                <div class="Marquee-tag w-full">not only for professionals</div>
+                <div class="Marquee-tag w-full">not only for professionals</div>
+                <div class="Marquee-tag w-full">not only for professionals</div>
+                <div class="Marquee-tag w-full">not only for professionals</div>
+              </div>
+            </div>
           </div>
           <div>
             <img
-              class="w-4/6 my-0 mx-auto md:w-3/6"
+              class="w-4/6 my-0 mx-auto md:w-4/5"
               src="/assets/only-image-f1e77888.png"
               alt="only_image"
             />
@@ -725,52 +619,50 @@
       <footer class="border-t border-gray py-7 bg-whobg">
         <div class="container px-4 mx-auto">
           <div class="md:flex md:items-center md:justify-between">
-            <div class="">
+            <div class="main">
               <p
                 class="text-base text-gray-500 font-medium before:block before:absolute before:py-[0.7px] before:bottom-0 before:bg-gray relative inline-block before:w-10 lg:text-2xl"
               >
                 Say Hello
               </p>
-              <p
-                class="font-semibold text-lg md:text-sm lg:text-xl xl:text-3xl"
-              >
+              <p class="font-semibold text-lg md:text-sm lg:text-xl xl:text-xl">
                 creativemonksdesign@gmail.com
               </p>
             </div>
 
-            <div class="">
+            <div class="main">
               <p
-                class="text-base text-gray-500 font-medium before:block before:absolute before:py-[0.7px] before:bottom-0 before:bg-gray relative inline-block before:w-10 lg:text-2xl"
+                class="text-base text-gray-500 font-medium before:block before:absolute before:py-[0.7px] before:bottom-0 before:bg-gray relative inline-block before:w-10 lg:text-xl"
               >
                 Follow us
               </p>
               <div class="flex flex-wrap items-center justify-between gap-3">
                 <p
-                  class="font-semibold text-lg md:text-sm lg:text-xl xl:text-3xl"
+                  class="font-semibold text-lg md:text-sm lg:text-xl xl:text-xl"
                 >
                   Dribble
                 </p>
                 <p
-                  class="font-semibold text-lg md:text-sm lg:text-xl xl:text-3xl"
+                  class="font-semibold text-lg md:text-sm lg:text-xl xl:text-xl"
                 >
                   Instagram
                 </p>
                 <p
-                  class="font-semibold text-lg md:text-sm lg:text-xl xl:text-3xl"
+                  class="font-semibold text-lg md:text-sm lg:text-xl xl:text-xl"
                 >
                   Linkdin
                 </p>
                 <p
-                  class="font-semibold text-lg md:text-sm lg:text-xl xl:text-3xl"
+                  class="font-semibold text-lg md:text-sm lg:text-xl xl:text-xl"
                 >
                   Facebook
                 </p>
               </div>
             </div>
 
-            <div class="">
+            <div class="main">
               <p
-                class="font-semibold text-lg md:text-sm md:text-right lg:text-xl xl:text-3xl"
+                class="font-semibold text-lg md:text-sm md:text-right lg:text-xl xl:text-xl"
               >
                 creative Monks design © 2022
               </p>
@@ -780,6 +672,14 @@
       </footer>
       <!-- footer over -->
     </div>
-    <script src="./script.js"></script>
+    
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
